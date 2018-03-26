@@ -21,8 +21,8 @@
 
 import sys
 from time import time
-
 from dynamic_array import DynamicArray
+
 try:
     maxN = int(sys.argv[1])
 except:
@@ -31,7 +31,7 @@ except:
 from time import time            # import time function from time module
 def compute_average(n):
   """Perform n appends to an empty list and return average time elapsed."""
-  data = []
+  data = DynamicArray()
   start = time()                 # record the start time (in seconds)
   for k in range(n):
     data.append(None)
